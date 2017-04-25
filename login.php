@@ -9,7 +9,7 @@
     $passowrd = $_POST['password'];//post获得用户密码单值
 
     if ($name && $passowrd){//如果用户名和密码都不为空
-             $sql = "select * from text where username = '$name' and password='$passowrd'";//检测数据库是否有对应的username和password的sql
+             $sql = "select * from demo where username = '$name' and password='$passowrd'";//检测数据库是否有对应的username和password的sql
              $result = mysql_query($sql);//执行sql
              $rows=mysql_num_rows($result);//返回一个数值
              if($rows){//0 false 1 true
