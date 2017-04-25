@@ -7,6 +7,6 @@ if ($con) {
 } 
 //echo "连接成功"."<br>";
     
-    mysql_select_db('runoob');
+    mysql_select_db('text');
 
 ?>
