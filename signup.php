@@ -9,7 +9,7 @@
     $password=$_POST['password'];//post获取表单里的password
 
     include('connect.php');//链接数据库
-    $q="insert into demo(id,username,password) values (1,'$name','$password')";//向数据库插入表单传来的值的sql
+    $q="insert into demo(username,password) values ('$name','$password')";//向数据库插入表单传来的值的sql
     //var_dump($q);exit;
     $reslut=mysql_query($q);//执行sql
     
